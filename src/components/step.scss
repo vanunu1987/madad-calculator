@@ -1,0 +1,12 @@
+.inactive {
+    display: none;
+}
+
+.topography {
+    display: flex;
+    justify-content: center;
+
+    .from-start-button {
+        background-color: #3f51b5;
+    }
+}
