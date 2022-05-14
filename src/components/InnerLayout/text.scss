@@ -1,0 +1,6 @@
+.text-container {
+    max-width: 450px;
+    @media screen and (max-width: 500px) {
+        max-width: 300px;
+    }
+}

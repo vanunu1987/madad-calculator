@@ -1,0 +1,26 @@
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    @media screen and (max-width: 500px) {
+        font-size: 11px;
+    }
+    @media screen and (max-width: 360px) {
+        font-size: 9px;
+    }
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottom-calss {
+    margin-bottom: 15px;
+}
