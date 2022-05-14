@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/madad-calculator/static/css/main.eea837a3.css",
+    "main.js": "/madad-calculator/static/js/main.d8e7fe6a.js",
+    "static/js/988.cc40546e.chunk.js": "/madad-calculator/static/js/988.cc40546e.chunk.js",
+    "index.html": "/madad-calculator/index.html",
+    "main.eea837a3.css.map": "/madad-calculator/static/css/main.eea837a3.css.map",
+    "main.d8e7fe6a.js.map": "/madad-calculator/static/js/main.d8e7fe6a.js.map",
+    "988.cc40546e.chunk.js.map": "/madad-calculator/static/js/988.cc40546e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eea837a3.css",
+    "static/js/main.d8e7fe6a.js"
+  ]
+}
