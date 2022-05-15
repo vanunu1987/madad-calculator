@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import InnerLayout from './InnerLayout/InnerLayout';
 import { ctx } from '../App'
 import {getMadadForPaymentList, getPredictMadad} from '../services/madad'
+import './layout.scss'
 
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -43,9 +44,9 @@ export default function SimplePaper() {
         }
     })();
   }, []);
-
+  const rootLayout = state.step === 4 ? ' root-layout' : ''
   return (
-    <div className={classes.root}>
+    <div className={classes.root + '' + rootLayout}>
       <Paper elevation={3}>
         <InnerLayout/>
       </Paper>
