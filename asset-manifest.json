@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.464c3293.css",
-    "main.js": "/static/js/main.ae590505.js",
-    "static/js/988.cc40546e.chunk.js": "/static/js/988.cc40546e.chunk.js",
-    "index.html": "/index.html",
-    "main.464c3293.css.map": "/static/css/main.464c3293.css.map",
-    "main.ae590505.js.map": "/static/js/main.ae590505.js.map",
-    "988.cc40546e.chunk.js.map": "/static/js/988.cc40546e.chunk.js.map"
+    "main.css": "/madad-calculator/static/css/main.ece2554c.css",
+    "main.js": "/madad-calculator/static/js/main.3ec1f565.js",
+    "static/js/988.cc40546e.chunk.js": "/madad-calculator/static/js/988.cc40546e.chunk.js",
+    "index.html": "/madad-calculator/index.html",
+    "main.ece2554c.css.map": "/madad-calculator/static/css/main.ece2554c.css.map",
+    "main.3ec1f565.js.map": "/madad-calculator/static/js/main.3ec1f565.js.map",
+    "988.cc40546e.chunk.js.map": "/madad-calculator/static/js/988.cc40546e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.464c3293.css",
-    "static/js/main.ae590505.js"
+    "static/css/main.ece2554c.css",
+    "static/js/main.3ec1f565.js"
   ]
 }
