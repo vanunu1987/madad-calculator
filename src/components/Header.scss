@@ -16,7 +16,10 @@
     background-repeat: no-repeat;
 }
 .main-title {
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 580px) {
         font-size: 20px;
+    }
+    @media screen and (max-width: 430px) {
+        max-width: 230px;
     }
 }

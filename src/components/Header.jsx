@@ -6,7 +6,7 @@ const Header = () => {
     return <div className='header-main-container'>
         <div className="logo"></div>
         <h1 className='main-title'>מחשבון מדד תשומות הבניה</h1>
-        <span>שלום :{state.name}</span>
+        <span>שלום {state.name}</span>
     </div>
 } 
 

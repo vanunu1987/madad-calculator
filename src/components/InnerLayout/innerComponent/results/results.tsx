@@ -61,7 +61,7 @@ return <div className="results">
     </div>
     {resultsList}
     <p className='bottom-calss'>
-        * תוספת נק׳ חזויה במדד לחודש  (מחושב חצי שנה אחרוה)
+        * תוספת נק׳ חזויה במדד לחודש  (מחושב חצי שנה אחורה)
     </p>
 </div>
 }
