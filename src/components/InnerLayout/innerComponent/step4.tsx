@@ -21,7 +21,6 @@ useEffect(()=>{
     if (state.finishSteps) {
         const dateValidation = validateDates(state.paymentList)
         const amountValidation = validateAmount(state.paymentList, state.totalAmount)
-        console.log({dateValidation});
         
         if (!dateValidation.isValid) {
             setErrors(prevErrors => ({...prevErrors ,dateValidation: {msg: dateValidation.msg} }))
@@ -44,8 +43,6 @@ useEffect(()=>{
 
 const setPaymentListDate = (date: string, index: number) => {
     const tempPaymentList = [...state.paymentList]
-    console.log(calcMonthForMada(date));
-    
     tempPaymentList[index] = {...state.paymentList[index], date, monthToCalc: calcMonthForMada(date) }
     dispatch({ action: 'setPaymentList', data: { paymentList: tempPaymentList }})
 }

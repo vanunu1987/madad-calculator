@@ -13,13 +13,10 @@ useEffect( () => {
             if (!madadForSignDay) {
                 madadForSignDay = await getMadadDiff(state.signDate, state.predictMadad)
             }
-            console.log({madadForSignDay});
-            
             dispatch({ action: 'setMadadForSignDay', data: {madadForSignDay} })
             localStorage.setItem('localState', JSON.stringify({...state, madadForSignDay }))
             
             const updatePaymentList = await getMadadForPaymentList(state.paymentList, state.predictMadad)
-            console.log({updatePaymentList});
             dispatch({ action: 'setPaymentList', data: {paymentList: updatePaymentList} })
             localStorage.setItem('localState', JSON.stringify({...state, paymentList: updatePaymentList }))
         } catch (e) {
@@ -32,8 +29,6 @@ useEffect(() => {
     (async function() {
         try {
             const predictMadad = await getPredictMadad()
-            console.log({predictMadad});
-            
             dispatch({ action: 'setPredictMadad', data: {predictMadad} })
             localStorage.setItem('localState', JSON.stringify({...state, predictMadad }))
         } catch (e) {

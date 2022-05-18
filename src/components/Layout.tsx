@@ -30,13 +30,10 @@ export default function SimplePaper() {
     (async function() {
         try {
             const predictMadad = await getPredictMadad()
-            console.log({predictMadad});
-            
             dispatch({ action: 'setPredictMadad', data: {predictMadad} })
             localStorage.setItem('localState', JSON.stringify({...state, predictMadad }))
 
           const updatePaymentList = await getMadadForPaymentList(state.paymentList, state.predictMadad)
-          console.log({updatePaymentList});
           dispatch({ action: 'setPaymentList', data: {paymentList: updatePaymentList} })
           localStorage.setItem('localState', JSON.stringify({...state, paymentList: updatePaymentList }))
         } catch (e) {

@@ -1,8 +1,6 @@
 import { PaymentList } from '../../../App'
 
 export const validateDates = (paymentList: PaymentList[]) => {
-    console.log({paymentList});
-    
     const isAllDatesNotFull = paymentList.some(paymentObj => !paymentObj.date)
     const datesIsNotInOrder = paymentList.some((paymentObj, idx) => {
         const index = idx ? idx - 1 : 0
@@ -30,8 +28,6 @@ export const validateTotalAmount = (signDate: number) => {
 }
 
 export const validateAmount = (paymentList: PaymentList[], totalAmount: number) => {
-    console.log({paymentList});
-    
     const isAllDatesNotFull = paymentList.some(paymentObj => !paymentObj.amount)
     const isEqualToTotalAmount = paymentList.reduce((total,payment) => {
         return total + payment.amount

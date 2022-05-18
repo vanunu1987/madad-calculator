@@ -82,11 +82,9 @@ const reducer = (state: State, { action, data }: ReducerParams): State => {
       localStorage.setItem('localState', JSON.stringify({ ...state, finishSteps: data?.finishSteps || defaultState.finishSteps }))
       return { ...state, finishSteps: data?.finishSteps || defaultState.finishSteps }
     case 'setMadadForSignDay':
-      console.log(data?.madadForSignDay);
       localStorage.setItem('localState', JSON.stringify({ ...state, madadForSignDay: data?.madadForSignDay || defaultState.madadForSignDay }))
       return { ...state, madadForSignDay: data?.madadForSignDay || defaultState.madadForSignDay }
     case 'setPredictMadad':
-      console.log(data?.predictMadad);
       localStorage.setItem('localState', JSON.stringify({ ...state, predictMadad: data?.predictMadad || defaultState.predictMadad }))
       return { ...state, predictMadad: data?.predictMadad || defaultState.predictMadad }
   }
