@@ -35,7 +35,7 @@ return <div className='step3-container'>
     <div className="input-container">
         <div className="lable-wraper">
             <label htmlFor="quantity" >מספר פעימות</label>
-            <input name="numberOfPayment" id="quantity" type="number" min={0} max={10} onChange={(event) => setNumberOfPayment(+event.target.value)} value={numberOfPayment}/>
+            <input name="numberOfPayment" id="quantity" type="number" min={0} max={10} onChange={(event) => setNumberOfPayment(+event.target.value)} value={numberOfPayment || ''}/>
         </div>
         {errorsToDisplay}
     </div>

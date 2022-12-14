@@ -91,7 +91,7 @@ export const getPredictMadad = async () => {
     const year = dateObj.getFullYear()
     const month = dateObj.getMonth() || 12
     let i = 5
-    const realDate = getRealDate(month, year, i)
+    const realDate = getRealDate(month+1, year, i)
     sum -= await getMadaByMonth(realDate)
     return +(sum / (i)).toFixed(2)
 } 

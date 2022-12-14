@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:4000",
-  "homepage": "https://vanunu1987.github.io/madad-calculator", 
+  "homepage": "https://madad-calc.me", 
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",

@@ -46,8 +46,8 @@ export const validateNumberOfPayment = (numberOfPayment: number) => {
     if (numberOfPayment < 3) {
         return { msg: 'נא הזינו לפחות 3 תשלומים', isValid: false}
     }
-    if (numberOfPayment > 8) {
-        return { msg: 'נא הזינו עד 8 תשלומים', isValid: false}
+    if (numberOfPayment > 12) {
+        return { msg: 'נא הזינו עד 12 תשלומים', isValid: false}
     }
     
     return {msg: '', isValid: true}

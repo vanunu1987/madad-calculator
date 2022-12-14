@@ -16,7 +16,7 @@ return <div className="item">
 </span>
 <span>
     <Lable lableText='סכום לתשלום'/>
-    <span>{new Intl.NumberFormat('he-IN', { maximumSignificantDigits: 7, style: 'currency', currency: 'ILS' }).format(amount)}</span> |
+    <span>{new Intl.NumberFormat('he-IN', { maximumSignificantDigits: 7, currency: 'ILS' }).format(amount)}</span> |
 </span>
 <span>
     <Lable lableText='מדד לתקופה (חזוי / קיים)'/>
